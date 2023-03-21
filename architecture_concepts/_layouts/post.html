@@ -1,13 +1,33 @@
-<div class="col-lg-8 col-md-10 mx-auto">
-  <hr />
-  
-  <script src="https://utteranc.es/client.js"
-    repo="CyborTronik/concepts"
-    issue-term="url"
-    label="comment"
-    theme="github-light"
-    crossorigin="anonymous"
-    async>
-  </script>
-  
-</div>
+---
+layout: default
+---
+
+<section class="standalone">
+  <div class="grid">
+    <div class="unit whole">
+      <article>
+        {%- if page.permalink contains "resources" %}
+        <div class="improve right hide-on-mobiles">
+          <a data-proofer-ignore href="https://github.com/jekyll/jekyll/edit/master/docs/{{ page.path }}"><i class="fa fa-pencil"></i> &nbsp;Improve this page</a>
+        </div>
+        {% endif -%}
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </article>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <hr />
+      <script src="https://utteranc.es/client.js"
+        repo="CyborTronik/concepts"
+        issue-term="url"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+  </div>
+</section>

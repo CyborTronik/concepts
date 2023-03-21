@@ -27,6 +27,15 @@ baseurl: "/concepts" # the subpath of your site, e.g. /blog
 url: "https://concepts.3fun.space" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: stanislav_3fun
 
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      comments: true
+
+
 # Build settings
 theme: minima
 plugins:

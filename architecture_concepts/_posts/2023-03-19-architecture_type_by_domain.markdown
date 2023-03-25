@@ -17,6 +17,6 @@ In this regard the suggestion is to look at commonly used terms in the following
 | Bounded domain + One layer | *Micro application* [^3] |
 
 
-[^1]: For layared architecture a popular case is Client-Server one. Where `Client` is considered as one layer that knows everything in the business scope. And the `server` as another layer that knows the whole business context too.
+[^1]: For layered architecture a popular case is Client-Server one. Where `Client` is considered as one layer that knows everything in the business scope. And the `server` as another layer that knows the whole business context too.
 [^2]: SOA at times might be considered monolithic architecture when the context is either not bounded or too big to handle.
 [^3]: More comonly is *microservice* which is about backend side, while on the front end you may see the term *micro frontend*.

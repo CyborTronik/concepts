@@ -15,9 +15,9 @@ Kind of software interactions:
 | ---- | ---------------------- | ---------- |
 | *Blocking request* | syncronious communication | Blocked process untill gets the result. |
 | *Async request* | asyncronious communication | Blocking request that gets a reference ID, and multiple requests that check the result based on reference ID. |
-| *Notify request* | event based communication, also fire and forget[^1] | One way communication. Kind of request that doesn't wait for response. |
+| *Notify request* | event based communication, also fire and forget [^1] | One way communication. Kind of request that doesn't wait for response. |
 | *Subscriber* | event based communication | Actually only receiving **responses** not requesting them. Low load, eventual consistency. |
 | *Realtime processing* | streaming | Pulling (almost listening) data and receiving results as soon as they are ready to be processed. |
 | *Bulk processing* | batch jobs | One time processing of big amount of data. Resource hungry. Eventual consistency. |
 
-[^1] Fire and forget concept usually goes togheter with the [Actor based systems](https://doc.akka.io/docs/akka/current/typed/interaction-patterns.html#fire-and-forget), an evolution of the concept from [Erlang lang](https://www.erlang.org/).
+[^1]: Fire and forget concept usually goes togheter with the [Actor based systems](https://doc.akka.io/docs/akka/current/typed/interaction-patterns.html#fire-and-forget), an evolution of the concept from [Erlang lang](https://www.erlang.org/).

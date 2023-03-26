@@ -16,7 +16,8 @@ In this regard the suggestion is to look at commonly used terms in the following
 | Bounded domain + End to end solution | *Service Oriented Architecture (SOA)* [^2] |
 | Bounded domain + One layer | *Micro application* [^3] |
 
+**Note:** *Event based* system is a way of interaction and less about domain, therefore not included here. Which could be a valid architecture type, but needs a different pivot for categorization. See [Communication Types]({{site.baseurl}}{% post_url 2023-03-25-communication_types %}) for more details.
 
 [^1]: For layered architecture a popular case is Client-Server one. Where `Client` is considered as one layer that knows everything in the business scope. And the `server` as another layer that knows the whole business context too.
 [^2]: SOA at times might be considered monolithic architecture when the context is either not bounded or too big to handle.
-[^3]: More comonly is *microservice* which is about backend side, while on the front end you may see the term *micro frontend*.
+[^3]: More comonly is *microservice* which is about backend side, while on the front end you may find the term *micro frontend*.

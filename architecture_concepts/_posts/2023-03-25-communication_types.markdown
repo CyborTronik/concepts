@@ -5,9 +5,9 @@ date:   2023-03-25 23:59:00 +0000
 categories: communications events async
 ---
 
-An imense amount of books and sources have missalignments in the way of mixing the [software architecture types]({% post_url 2023-03-19-architecture_type_by_domain %}) with the way communication and have it in one backet as "Categories of Architecture".
+An imense amount of books and sources have missalignments in the way of mixing the [software architecture types]({{site.baseurl}}{% post_url 2023-03-19-architecture_type_by_domain %}) with the way communication and have it in one backet as "Categories of Architecture".
 
-To avoid that confusion in addition to the [re-structured software architecture types]({% post_url 2023-03-19-architecture_type_by_domain %}) below is the concise suggestion of the ways of interaction between system or software artifacts.
+To avoid that confusion in addition to the [re-structured software architecture types]({{site.baseurl}}{% post_url 2023-03-19-architecture_type_by_domain %}) below is the concise suggestion of the ways of interaction between system or software artifacts.
 
 Kind of software interactions:
 

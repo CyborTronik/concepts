@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://concepts.3fun.space/concepts/concepts/feed.xml" rel="self" type="application/atom+xml" /><link href="https://concepts.3fun.space/concepts/concepts/" rel="alternate" type="text/html" /><updated>2023-03-26T11:18:13+00:00</updated><id>https://concepts.3fun.space/concepts/concepts/feed.xml</id><title type="html">Re-structured Software Architecture</title><subtitle>This blog is about re-aligning on existing software architecture concepts in a simplifie way. Also as a guide, that helps to search the tool or approach for the task in question.</subtitle><entry><title type="html">Re-structured Communication Types</title><link href="https://concepts.3fun.space/concepts/concepts/communications/events/async/2023/03/25/communication_types.html" rel="alternate" type="text/html" title="Re-structured Communication Types" /><published>2023-03-25T23:59:00+00:00</published><updated>2023-03-25T23:59:00+00:00</updated><id>https://concepts.3fun.space/concepts/concepts/communications/events/async/2023/03/25/communication_types</id><content type="html" xml:base="https://concepts.3fun.space/concepts/concepts/communications/events/async/2023/03/25/communication_types.html">&lt;p&gt;An imense amount of books and sources have missalignments in the way of mixing the &lt;a href=&quot;/categories/domain/2023/03/19/architecture_type_by_domain.html&quot;&gt;software architecture types&lt;/a&gt; with the way communication and have it in one backet as “Categories of Architecture”.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://concepts.3fun.space/concepts/concepts/feed.xml" rel="self" type="application/atom+xml" /><link href="https://concepts.3fun.space/concepts/concepts/" rel="alternate" type="text/html" /><updated>2023-03-26T11:23:19+00:00</updated><id>https://concepts.3fun.space/concepts/concepts/feed.xml</id><title type="html">Re-structured Software Architecture</title><subtitle>This blog is about re-aligning on existing software architecture concepts in a simplifie way. Also as a guide, that helps to search the tool or approach for the task in question.</subtitle><entry><title type="html">Re-structured Communication Types</title><link href="https://concepts.3fun.space/concepts/concepts/communications/events/async/2023/03/25/communication_types.html" rel="alternate" type="text/html" title="Re-structured Communication Types" /><published>2023-03-25T23:59:00+00:00</published><updated>2023-03-25T23:59:00+00:00</updated><id>https://concepts.3fun.space/concepts/concepts/communications/events/async/2023/03/25/communication_types</id><content type="html" xml:base="https://concepts.3fun.space/concepts/concepts/communications/events/async/2023/03/25/communication_types.html">&lt;p&gt;An imense amount of books and sources have missalignments in the way of mixing the &lt;a href=&quot;/categories/domain/2023/03/19/architecture_type_by_domain.html&quot;&gt;software architecture types&lt;/a&gt; with the way communication and have it in one backet as “Categories of Architecture”.&lt;/p&gt;
 
 &lt;p&gt;To avoid that confusion in addition to the &lt;a href=&quot;/categories/domain/2023/03/19/architecture_type_by_domain.html&quot;&gt;re-structured software architecture types&lt;/a&gt; below is the concise suggestion of the ways of interaction between system or software artifacts.&lt;/p&gt;
 
@@ -21,12 +21,12 @@
     &lt;tr&gt;
       &lt;td&gt;&lt;em&gt;Async request&lt;/em&gt;&lt;/td&gt;
       &lt;td&gt;asyncronious communication&lt;/td&gt;
-      &lt;td&gt;Blocking request that gets a reference ID, and multiple requests that check the result based on reference ID.&lt;/td&gt;
+      &lt;td&gt;Blocking request that gets a reference ID immediately, and multiple requests after that (pulling), that checks the result based on the reference ID.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;em&gt;Notify request&lt;/em&gt;&lt;/td&gt;
       &lt;td&gt;event based communication, also fire and forget &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
-      &lt;td&gt;One way communication. Kind of request that doesn’t wait for response.&lt;/td&gt;
+      &lt;td&gt;One way communication. A kind of request that doesn’t wait for response.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;em&gt;Subscriber&lt;/em&gt;&lt;/td&gt;
@@ -36,12 +36,12 @@
     &lt;tr&gt;
       &lt;td&gt;&lt;em&gt;Realtime processing&lt;/em&gt;&lt;/td&gt;
       &lt;td&gt;streaming&lt;/td&gt;
-      &lt;td&gt;Pulling (almost listening) data and receiving results as soon as they are ready to be processed.&lt;/td&gt;
+      &lt;td&gt;Pulling (almost listening) or push-based data and receiving results as soon as they are ready to be processed.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;em&gt;Bulk processing&lt;/em&gt;&lt;/td&gt;
       &lt;td&gt;batch jobs&lt;/td&gt;
-      &lt;td&gt;One time processing of big amount of data. Resource hungry. Eventual consistency.&lt;/td&gt;
+      &lt;td&gt;One time processing of big amount of data. Resource hungry. Has eventual consistency.&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;

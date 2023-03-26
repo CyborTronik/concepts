@@ -64,12 +64,12 @@
     <tr>
       <td><em>Async request</em></td>
       <td>asyncronious communication</td>
-      <td>Blocking request that gets a reference ID, and multiple requests that check the result based on reference ID.</td>
+      <td>Blocking request that gets a reference ID immediately, and multiple requests after that (pulling), that checks the result based on the reference ID.</td>
     </tr>
     <tr>
       <td><em>Notify request</em></td>
       <td>event based communication, also fire and forget <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></td>
-      <td>One way communication. Kind of request that doesn’t wait for response.</td>
+      <td>One way communication. A kind of request that doesn’t wait for response.</td>
     </tr>
     <tr>
       <td><em>Subscriber</em></td>
@@ -79,12 +79,12 @@
     <tr>
       <td><em>Realtime processing</em></td>
       <td>streaming</td>
-      <td>Pulling (almost listening) data and receiving results as soon as they are ready to be processed.</td>
+      <td>Pulling (almost listening) or push-based data and receiving results as soon as they are ready to be processed.</td>
     </tr>
     <tr>
       <td><em>Bulk processing</em></td>
       <td>batch jobs</td>
-      <td>One time processing of big amount of data. Resource hungry. Eventual consistency.</td>
+      <td>One time processing of big amount of data. Resource hungry. Has eventual consistency.</td>
     </tr>
   </tbody>
 </table>

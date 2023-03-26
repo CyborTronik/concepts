@@ -1,16 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://concepts.3fun.space/concepts/feed.xml" rel="self" type="application/atom+xml" /><link href="https://concepts.3fun.space/concepts/" rel="alternate" type="text/html" /><updated>2023-03-26T11:04:37+00:00</updated><id>https://concepts.3fun.space/concepts/feed.xml</id><title type="html">Re-structured Software Architecture</title><subtitle>This blog is about re-aligning on existing software architecture concepts in a simplifie way. Also as a guide, that helps to search the tool or approach for the task in question.</subtitle><entry><title type="html">Re-structured Communication Types</title><link href="https://concepts.3fun.space/concepts/communications/events/async/2023/03/25/communication_types.html" rel="alternate" type="text/html" title="Re-structured Communication Types" /><published>2023-03-25T23:59:00+00:00</published><updated>2023-03-25T23:59:00+00:00</updated><id>https://concepts.3fun.space/concepts/communications/events/async/2023/03/25/communication_types</id><content type="html" xml:base="https://concepts.3fun.space/concepts/communications/events/async/2023/03/25/communication_types.html">&lt;p&gt;An imense amount of books and sources have missalignments in the way of mixing the &lt;a href=&quot;/categories/domain/2023/03/19/architecture_type_by_domain.html&quot;&gt;software architecture types&lt;/a&gt; with the way communication and have it in one backet as “Categories of Architecture”.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://concepts.3fun.space/concepts/feed.xml" rel="self" type="application/atom+xml" /><link href="https://concepts.3fun.space/concepts/" rel="alternate" type="text/html" /><updated>2023-03-26T11:14:13+00:00</updated><id>https://concepts.3fun.space/concepts/feed.xml</id><title type="html">Re-structured Software Architecture</title><subtitle>This blog is about re-aligning on existing software architecture concepts in a simplifie way. Also as a guide, that helps to search the tool or approach for the task in question.</subtitle><entry><title type="html">Re-structured Communication Types</title><link href="https://concepts.3fun.space/concepts/communications/events/async/2023/03/25/communication_types.html" rel="alternate" type="text/html" title="Re-structured Communication Types" /><published>2023-03-25T23:59:00+00:00</published><updated>2023-03-25T23:59:00+00:00</updated><id>https://concepts.3fun.space/concepts/communications/events/async/2023/03/25/communication_types</id><content type="html" xml:base="https://concepts.3fun.space/concepts/communications/events/async/2023/03/25/communication_types.html">&lt;p&gt;An imense amount of books and sources have missalignments in the way of mixing the &lt;a href=&quot;/categories/domain/2023/03/19/architecture_type_by_domain.html&quot;&gt;software architecture types&lt;/a&gt; with the way communication and have it in one backet as “Categories of Architecture”.&lt;/p&gt;
 
 &lt;p&gt;To avoid that confusion in addition to the &lt;a href=&quot;/categories/domain/2023/03/19/architecture_type_by_domain.html&quot;&gt;re-structured software architecture types&lt;/a&gt; below is the concise suggestion of the ways of interaction between system or software artifacts.&lt;/p&gt;
 
-&lt;p&gt;Kind of software interactions:
-| Type | Alias/Reference | Attributes |
-| —- | ———————- | ———- |
-| &lt;em&gt;Blocking request&lt;/em&gt; | syncronious communication | Blocked process untill gets the result. |
-| &lt;em&gt;Async request&lt;/em&gt; | asyncronious communication | Blocking request that gets a reference ID, and multiple requests that check the result based on reference ID. |
-| &lt;em&gt;Notify request&lt;/em&gt; | event based communication, also fire and forget | One way communication. Kind of request that doesn’t wait for response. |
-| &lt;em&gt;Subscriber&lt;/em&gt; | event based communication | Actually only receiving &lt;strong&gt;responses&lt;/strong&gt; not requesting them. Low load, eventual consistency. |
-| &lt;em&gt;Realtime processing&lt;/em&gt; | streaming | Pulling (almost listening) data and receiving results as soon as they are ready to be processed. |
-| &lt;em&gt;Bulk processing&lt;/em&gt; | batch jobs | One time processing of big amount of data. Resource hungry. Eventual consistency. |&lt;/p&gt;</content><author><name></name></author><category term="communications" /><category term="events" /><category term="async" /><summary type="html">An imense amount of books and sources have missalignments in the way of mixing the software architecture types with the way communication and have it in one backet as “Categories of Architecture”.</summary></entry><entry><title type="html">Re-structured Architecture Types By Domain</title><link href="https://concepts.3fun.space/concepts/categories/domain/2023/03/19/architecture_type_by_domain.html" rel="alternate" type="text/html" title="Re-structured Architecture Types By Domain" /><published>2023-03-19T20:26:08+00:00</published><updated>2023-03-19T20:26:08+00:00</updated><id>https://concepts.3fun.space/concepts/categories/domain/2023/03/19/architecture_type_by_domain</id><content type="html" xml:base="https://concepts.3fun.space/concepts/categories/domain/2023/03/19/architecture_type_by_domain.html">&lt;p&gt;A common expectactation for the software in business terms is to be a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;solution&lt;/code&gt; of certain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;situation&lt;/code&gt;.
+&lt;p&gt;Kind of software interactions:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Type&lt;/th&gt;
+      &lt;th&gt;Alias/Reference&lt;/th&gt;
+      &lt;th&gt;Attributes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;Blocking request&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;syncronious communication&lt;/td&gt;
+      &lt;td&gt;Blocked process untill gets the result.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;Async request&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;asyncronious communication&lt;/td&gt;
+      &lt;td&gt;Blocking request that gets a reference ID, and multiple requests that check the result based on reference ID.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;Notify request&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;event based communication, also fire and forget[^1]&lt;/td&gt;
+      &lt;td&gt;One way communication. Kind of request that doesn’t wait for response.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;Subscriber&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;event based communication&lt;/td&gt;
+      &lt;td&gt;Actually only receiving &lt;strong&gt;responses&lt;/strong&gt; not requesting them. Low load, eventual consistency.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;Realtime processing&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;streaming&lt;/td&gt;
+      &lt;td&gt;Pulling (almost listening) data and receiving results as soon as they are ready to be processed.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;Bulk processing&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;batch jobs&lt;/td&gt;
+      &lt;td&gt;One time processing of big amount of data. Resource hungry. Eventual consistency.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;[^1] Fire and forget concept usually goes togheter with the &lt;a href=&quot;https://doc.akka.io/docs/akka/current/typed/interaction-patterns.html#fire-and-forget&quot;&gt;Actor based systems&lt;/a&gt;, an evolution of the concept from &lt;a href=&quot;https://www.erlang.org/&quot;&gt;Erlang lang&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="communications" /><category term="events" /><category term="async" /><summary type="html">An imense amount of books and sources have missalignments in the way of mixing the software architecture types with the way communication and have it in one backet as “Categories of Architecture”.</summary></entry><entry><title type="html">Re-structured Architecture Types By Domain</title><link href="https://concepts.3fun.space/concepts/categories/domain/2023/03/19/architecture_type_by_domain.html" rel="alternate" type="text/html" title="Re-structured Architecture Types By Domain" /><published>2023-03-19T20:26:08+00:00</published><updated>2023-03-19T20:26:08+00:00</updated><id>https://concepts.3fun.space/concepts/categories/domain/2023/03/19/architecture_type_by_domain</id><content type="html" xml:base="https://concepts.3fun.space/concepts/categories/domain/2023/03/19/architecture_type_by_domain.html">&lt;p&gt;A common expectactation for the software in business terms is to be a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;solution&lt;/code&gt; of certain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;situation&lt;/code&gt;.
 And it makes a natural fit for the software design to be shaped around the bussiness domain and meaning. In otherway define type of architecture where the pivot (north-star) is the business domain.&lt;/p&gt;
 
 &lt;p&gt;In this regard the suggestion is to look at commonly used terms in the following way:&lt;/p&gt;
